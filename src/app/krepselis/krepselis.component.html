@@ -1,7 +1,7 @@
 <div>
   Krepšelyje yra: {{krepselioKiekis()}}
 </div>
-<button (click)="keistiPrekiuSarasa">Rodyti prekes</button>
+<button (click)="keistiPrekiuSarasa()" *ngIf="krepselioKiekis()!== 0">{{rodomosPrekes?"Slėpti krepšelio turinį":"Rodyti krepšelio turinį"}}</button>
 
 <div *ngIf="rodomosPrekes">
   <div *ngFor="let prekes of krepselioSarasas()">
