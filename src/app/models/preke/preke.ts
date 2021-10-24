@@ -13,4 +13,12 @@ export class Preke {
   public atsaukti() {
     this.kiekis--;
   }
+
+  public krepselyje(): boolean {
+    if (this.kiekis > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

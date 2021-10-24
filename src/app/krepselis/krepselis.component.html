@@ -1,1 +1,10 @@
-<p>krepselis works!</p>
+<div>
+  Krepšelyje yra: {{krepselioKiekis()}}
+</div>
+<button (click)="keistiPrekiuSarasa">Rodyti prekes</button>
+
+<div *ngIf="rodomosPrekes">
+  <div *ngFor="let prekes of krepselioSarasas()">
+    {{prekes.pavadinimas}}, {{prekes.kiekis}}
+  </div>
+</div>
