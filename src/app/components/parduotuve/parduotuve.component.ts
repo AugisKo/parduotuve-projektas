@@ -9,15 +9,9 @@ import { Preke } from 'src/app/models/preke/preke';
 export class ParduotuveComponent implements OnInit {
   public prekes: Preke[] = [];
   constructor() {
-    this.prekes.push(
-      new Preke('Krepšinio kamuolys', 15, 'src/assets/img/kamuolys.jpeg')
-    );
-    this.prekes.push(
-      new Preke('Futbolo kamuolys', 18, 'src/assets/img/fkamuolys.jpeg')
-    );
-    this.prekes.push(
-      new Preke('Teniso kamuolys', 5, 'src/assets/img/tkamuolys.jpeg')
-    );
+    this.prekes.push(new Preke('Krepšinio kamuolys', 15, 'kamuolys.jpeg'));
+    this.prekes.push(new Preke('Futbolo kamuolys', 18, 'fkamuolys.jpeg'));
+    this.prekes.push(new Preke('Teniso kamuolys', 5, 'tkamuolys.jpeg'));
   }
 
   ngOnInit(): void {}
